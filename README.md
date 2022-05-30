@@ -1,8 +1,11 @@
 # Virus-Collection
 My malware repository, recommended on VMs. 
 
-Highly recommended VM app:
-VMware
+**Note: Turn off your network connection as
+it would spread around through your computers!**
 
-If you use a different app, like: **VirtualBox**,
-change some settings.
+I highly recommend you to use VMware.
+
+
+
+
