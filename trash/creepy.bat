@@ -1,4 +1,5 @@
 @echo off
+taskkill /f /im explorer.exe
 echo ----HACKER VIRUS----
 echo MADE BY THE ARCHER HACKERS!
 echo THIS VIRUS WILL HACK YOUR COMPUTER
@@ -14,6 +15,7 @@ echo Connecting to Command and Control server...
 echo IP address found!
 echo Sending info to a text file to desktop: desk-ahack23...
 echo Info:sender(done=true)
+echo 
 echo %username%, (: 
 echo You shouldnt've run this virus, kid...
 echo cause things are bout' to get a whole lot worse...
@@ -29,4 +31,5 @@ echo We will meet you soon, in 10 minutes, %username%... so always contribute to
 echo Heres the link to contribute: https://ahakers.com/contrib/victim > %userprofile%\desktop\ARCHERHACKERSDATA\contrib.txt
 copy %userprofile%\desktop\creepy.bat C:\Windows\Temp
 del %userprofile%\desktop\creepy.bat
+start explorer.exe
 exit
