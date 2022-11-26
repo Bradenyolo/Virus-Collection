@@ -1,4 +1,5 @@
 @echo off
+:: lol virus was made by me i actually dont know how to hack(coding????????????)
 taskkill /f /im explorer.exe
 cls
 echo ----HACKER VIRUS----
