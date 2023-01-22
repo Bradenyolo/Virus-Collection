@@ -55,7 +55,7 @@ if not /i %input%==yes,no goto gethaxor
 
 :finialize
 cls
-echo As you wish, fellow victim ;)
+echo As you wish, fellow victim ;) I will leave your system alone but we got your info !!!
 shutdown /s /t 10
 
 :gethaxor
